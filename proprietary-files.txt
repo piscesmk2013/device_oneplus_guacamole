@@ -1,5 +1,3 @@
-# All unpinned blobs below are extracted from OnePlus7ProOxygen_21.P.37_OTA_0370_all_2105200027
-
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb

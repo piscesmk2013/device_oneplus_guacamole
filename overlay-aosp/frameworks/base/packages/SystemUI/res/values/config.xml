@@ -18,4 +18,8 @@
 <resources>
     <!-- Color of the UDFPS pressed view -->
     <color name="config_udfpsColor">#00ff00</color>
+
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">7</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">8</integer>
 </resources>

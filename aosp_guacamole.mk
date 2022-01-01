@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2021 The PixelExperience Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,28 +12,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamole device
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_guacamole
+PRODUCT_NAME := aosp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := GM1917
+PRODUCT_MODEL := GM1910
 PRODUCT_MANUFACTURER := OnePlus
+CUSTOM_DEVICE := OnePlus7Pro
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-scr_resolution := 1440
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus7Pro \
-    PRODUCT_NAME=OnePlus7Pro
+    TARGET_DEVICE=OnePlus7Pro \
+    TARGET_PRODUCT=OnePlus7Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
