@@ -14,6 +14,9 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/lib/hw/audio.primary.msmnile.so
 vendor/lib64/hw/audio.primary.msmnile.so
 
+# Audio firmware
+vendor/firmware/tfa98xx.cnt
+
 # Camera
 vendor/etc/camera/ashdr/iso617_4608x3456.ncf
 vendor/etc/camera/ashdr/ncf_pack.ncf
@@ -124,6 +127,19 @@ vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libgf_ud_hal.so
 vendor/lib64/libhvx_proxy_stub.so
 
+# Graphics
+vendor/firmware/a640_zap.b01
+vendor/firmware/a640_zap.elf
+vendor/firmware/a640_zap.mdt
+
+# IPA firmware
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+vendor/firmware/ipa_uc.b01
+vendor/firmware/ipa_uc.elf
+vendor/firmware/ipa_uc.mdt
+
 # Sensors
 vendor/etc/sensors/config/ak991x_0.json
 vendor/etc/sensors/config/ak991x_polling_0.json
@@ -199,10 +215,3 @@ vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/sns_reg_config
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
-
-# Vibrator Firmware
-vendor/firmware/aw8697_haptic_166.bin
-vendor/firmware/aw8697_haptic_168.bin
-vendor/firmware/aw8697_haptic_170.bin
-vendor/firmware/aw8697_haptic_172.bin
-vendor/firmware/aw8697_haptic_174.bin
